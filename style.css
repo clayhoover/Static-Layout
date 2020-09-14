@@ -1,0 +1,232 @@
+:root {
+    --primary-color: #e50914;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background: #000;
+    color: #999;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+h1,h2,h3,h4 {
+    color: white
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;    /* 8px? */
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {    /* background image */
+    width: 100%;
+    height: 80vh;   
+    position: relative;
+    background-image: url('../staticLayout/assets/Netflix\ Background.jpg');
+}
+
+.showcase::after {     /* Overlay */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0, 0.45);
+    box-shadow: 120px 100px 250px #000 , inset -120px -100px 250px #000
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+
+}
+.showcase-top img {     /* This is the Nefflix logo */
+    width: 10rem;
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    transform: translate(40% , -50%);
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60%, -50%)
+}
+
+.showcase-content {
+    position: relative;
+    margin: auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.showcase-content h1 {   /* Unlimited Movies, TV shows and more. */
+   font-weight: 500;
+   font-size: 3rem;
+   line-height: 1;
+   margin: 2 3 3rem;
+}
+
+.showcase-content h3 {   /* Watch anywhere. Cancel Anytime. */
+    font-weight: 350;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    margin: 2 0 2rem;
+
+}
+
+.showcase-content p {    /* Ready to watch? Enter your email... */
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.5;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0,0,0, 0.45);
+    border-radius: 2px;
+}
+
+.showcase-content input {   /* Email address input */
+    position: relative;
+    display: inline-flex;
+    left: 0;
+    right: 5rem;
+    bottom: -1vh;
+    width: 43rem;
+    height: 4rem;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.showcase-content .btn-xl {
+    position: absolute;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    height: 4.05rem;
+    width: 17rem;
+    margin-top: 13.4rem;
+    margin-left: 27rem
+
+}
+
+.card-0 {
+    border-top: 8px rgb(69,69,69) solid;
+    padding-top: 50px;
+}
+
+.card-0 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px 20px;
+}
+
+.tv {
+    padding-left: 100px;
+}
+
+.tv h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+    color: white;
+}
+
+.tv h3 {
+   font-size: 1.5rem; 
+   line-height: 2rem;
+   font-weight: 400;
+}
+
+.card-1 {
+    border-top: 8px rgb(69,69,69) solid;
+    padding-top: 50px;
+}
+
+.card-1 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px 20px;
+}
+
+.phone {
+    padding-right: 100px;
+}
+
+.phone img{
+    float: right;
+}
+
+.phone h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding: 1.2rem;
+    padding-left: 0;
+    color: white;
+    width: 450px;
+}
+
+.phone h3 {
+    font-size: 1.5rem; 
+    line-height: 2rem;
+    font-weight: 400;
+    width: 450px;
+}
