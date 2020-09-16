@@ -40,7 +40,7 @@ img {
     width: 100%;
     height: 80vh;   
     position: relative;
-    background-image: url('../staticLayout/assets/Netflix\ Background.jpg');
+    background-image: url('../staticLayout/assets/Netflix Background.jpg');
 }
 
 .showcase::after {     /* Overlay */
